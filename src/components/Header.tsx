@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import React from "react";
-import websiteLogo from '../assets/logo.png'
 import "@/styles/header.scss";
 
 const links = [
