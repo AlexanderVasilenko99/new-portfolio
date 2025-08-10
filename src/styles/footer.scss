@@ -1,0 +1,20 @@
+@use "variables" as *;
+
+footer {
+  background-color: black;
+}
+
+.footer {
+  border-top: 1px solid $border;
+  padding: 24px 0 40px;
+}
+
+.footer .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer small {
+  color: $muted;
+}

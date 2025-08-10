@@ -1,0 +1,58 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.about {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 1fr;
+}
+
+#about {
+  background-color: #0b0b0b;
+}
+
+@media (min-width: 900px) {
+  .about {
+    grid-template-columns: 1.2fr .8fr;
+  }
+}
+
+.about .text p {
+  margin-top: 8px;
+}
+
+.about ul {
+  margin: 12px 0 0;
+  padding-left: 18px;
+}
+
+.about li {
+  margin: 6px 0;
+  color: $muted;
+}
+
+.facts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.fact {
+  display: grid;
+  place-items: center;
+  border: 1px solid $muted;
+  border-radius: 16px;
+  padding: 24px 12px;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.fact span {
+  font-size: clamp(24px, 3vw, 36px);
+  font-weight: 800;
+  line-height: 1;
+}
+
+.fact small {
+  color: $muted;
+  margin-top: 8px;
+}

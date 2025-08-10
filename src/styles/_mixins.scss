@@ -1,0 +1,30 @@
+@use "variables" as *;
+
+@mixin container {
+  width: 100%;
+  max-width: $container;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+@mixin section {
+  padding: 96px 0;
+}
+
+@mixin title {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+}
+
+@mixin card {
+  background: rgba(255,255,255,0.02);
+  border: 1px solid black;//$border;
+  border-radius: 16px;
+  transition: transform .25s $ease, background .25s $ease, border-color .25s $ease;
+  &:hover {
+    transform: translateY(-2px);
+    background: rgba(255,255,255,0.04);
+    border-color: rgba(255,255,255,0.12);
+  }
+}
