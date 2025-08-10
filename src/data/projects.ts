@@ -1,4 +1,5 @@
 export type Project = {
+  id: number;
   title: string;
   tagline: string;
   image: string;
@@ -9,6 +10,7 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    id: 1,
     title: "Summer Makeover",
     tagline: "Design system & marketing site",
     image: "/work1.png",
@@ -17,6 +19,7 @@ export const projects: Project[] = [
     tags: ["React", "Vite", "SCSS"]
   },
   {
+    id: 2,
     title: "Sockets Checklist",
     tagline: "E‑commerce storefront revamp",
     image: "/work2.png",
@@ -25,6 +28,7 @@ export const projects: Project[] = [
     tags: ["Next.js", "Animations"]
   },
   {
+    id: 3,
     title: "Color Matching",
     tagline: "E‑commerce storefront revamp",
     image: "/work3.png",

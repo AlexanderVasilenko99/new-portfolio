@@ -11,7 +11,10 @@ export default function Projects() {
           {projects.map((p, i) => (
             <a key={p.title} className="card" href={p.link} target="_blank" rel="noreferrer">
               <div className="thumb">
-                <img src={`src/assets${p.image}`} alt={p.title} loading="lazy" />
+                <img
+                  src={`https://raw.githubusercontent.com/AlexanderVasilenko99/new-portfolio/refs/heads/main/public/work${p.id}.png`}
+                  alt={p.title}
+                  loading="lazy" />
               </div>
               <div className="meta">
                 <div>
